@@ -14,3 +14,7 @@ model = pkl.load(input_md)
 
 st.header('Write a feedback')
 txt = st.text_area('', '')
+
+if txt != '';
+  if st.button('Predict'):
+      feature_vector = encoder.transform([txt])
